@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TanderApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/tender_pink</item>
+        <item name="colorPrimaryVariant">@color/tender_teal</item>
+        <item name="colorOnPrimary">@color/tender_white</item>
+        <item name="colorAccent">@color/tender_pink</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/tender_gold</item>
+        <item name="colorSecondaryVariant">@color/tender_yellow</item>
+        <item name="colorOnSecondary">@color/tender_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/just_black</item>
+        <!-- Customize your theme here. -->
+        <item name="welcomeColor">@drawable/gradient_tender</item>
+        <item name="textColor">@color/just_black</item>
+        <item name="metaTextColor">@color/tender_black</item>
+        <item name="btnColor">@color/just_white</item>
+        <item name="btnColorPink">@color/tender_pink</item>
+        <item name="btnColorGrey">#94424242</item>
+        <item name="topAppBarBg">@color/just_white</item>
+        <item name="textViewBg">@color/tender_white</item>
+        <item name="arrowSRC">@drawable/ic_baseline_arrow_back_black</item>
+        <item name="floatingBg">@color/just_white</item>
+        <item name="backgroundMain">@drawable/background_main</item>
+        <item name="backgroundDefault">@color/just_white</item>
+    </style>
+    <!--    <style name="Theme.TanderApp.Background">-->
+<!--        <item name="backgroundTint">@color/tender_pink</item>-->
+<!--    </style>-->
+
+    <style name="Theme.TanderApp.Launcher">
+        <item name="android:windowBackground">@drawable/light_launch_screen</item>
+    </style>
+</resources>

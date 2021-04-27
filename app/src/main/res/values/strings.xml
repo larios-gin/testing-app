@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TanderAppTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="log_in">LOG IN</string>
+    <string name="password">Password</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="email">Email</string>
+    <string name="enter_your_birth_date">Enter your birth date</string>
+    <string name="name">Name...</string>
+    <string name="emaildotdot">Email...</string>
+    <string name="passwordotdot">Password...</string>
+    <string name="repeat_passworddotdot">Repeat password...</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tender_pink">#fd3c72</color>
+    <color name="tender_purple">#A250DE</color>
+    <color name="tender_blue">#12ADEE</color>
+    <color name="tender_teal">#3AE8BB</color>
+    <color name="tender_yellow">#FFC402</color>
+    <color name="tender_gold">#F2C573</color>
+    <color name="tender_black">#30302F</color>
+    <color name="tender_white">#F5F7FA</color>
+    <color name="just_black">#000000</color>
+    <color name="just_white">#FFFFFF</color>
+</resources>

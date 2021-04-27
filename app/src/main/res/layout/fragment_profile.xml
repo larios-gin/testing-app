@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundDefault"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_color="?attr/textColor"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textStyle="bold"
+            android:text="Joan, 19"
+            android:textColor="?attr/metaTextColor"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_settings"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            app:backgroundTint="?attr/floatingBg"
+            app:borderWidth="0dp"
+            app:fabCustomSize="70dp"
+            app:layout_constraintEnd_toStartOf="@+id/profile_add_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username"
+            app:maxImageSize="40dp"
+            app:srcCompat="@drawable/settings_clipart"
+            app:tint="?attr/btnColorGrey"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/profile_settings_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="SETTINGS"
+            android:textColor="?attr/btnColorGrey"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/profile_add_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_settings"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:foregroundGravity="center"
+            app:backgroundTint="?attr/btnColorPink"
+            app:borderWidth="0dp"
+            app:fabCustomSize="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username"
+            app:maxImageSize="50dp"
+            app:srcCompat="@drawable/camera_clipart"
+            app:tint="?attr/btnColor"
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_add_photo2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="48dp"
+            app:backgroundTint="?attr/btnColor"
+            android:src="@drawable/add_clipart"
+            app:fabCustomSize="35dp"
+            app:elevation="20dp"
+            android:focusable="false"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/profile_edit"
+            app:layout_constraintHorizontal_bias="0.689"
+            app:layout_constraintStart_toStartOf="@+id/profile_add_photo"
+            app:layout_constraintTop_toTopOf="@+id/profile_add_photo"
+            app:tint="@color/tender_pink"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/profile_add_photo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="ADD IMAGES"
+            android:textColor="?attr/btnColorGrey"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_add_photo" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_edit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:fabCustomSize="70dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            app:backgroundTint="?attr/floatingBg"
+            app:borderWidth="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_add_photo"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username"
+            app:maxImageSize="40dp"
+            app:srcCompat="@drawable/edit_clipart"
+            app:tint="?attr/btnColorGrey"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/profile_edit_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="EDIT INFO"
+            android:textColor="?attr/btnColorGrey"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_add_photo_text"
+            app:layout_constraintTop_toBottomOf="@+id/profile_edit"
+            tools:ignore="MissingConstraints" />
+
+        <android.widget.Button
+            android:id="@+id/profile_tinder_plus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="?attr/btnColorPink"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="MY TENDER PLUS®"
+            android:textColor="@color/just_white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

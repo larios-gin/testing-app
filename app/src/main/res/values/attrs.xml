@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="welcomeColor" format="reference"/>
+    <attr name="arrowSRC" format="reference"/>
+    <attr name="textColor" format="color"/>
+    <attr name="metaTextColor" format="color"/>
+    <attr name="btnColor" format="color"/>
+    <attr name="btnColorPink" format="color"/>
+    <attr name="btnColorGrey" format="color"/>
+    <attr name="topAppBarBg" format="color"/>
+    <attr name="textViewBg" format="color"/>
+    <attr name="floatingBg" format="color"/>
+    <attr name="backgroundMain" format="reference"/>
+    <attr name="backgroundDefault" format="color"/>
+</resources>

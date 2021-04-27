@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genders">
+        <item name="selectGender">Select your gender</item>
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+        <item name="other">Other</item>
+        <item name="helicopter">Combat Helicopter :)</item>
+    </string-array>
+    <string-array name="preference">
+        <item name="selectGender">Select your preference</item>
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+        <item name="other">Other</item>
+        <item name="helicopter">All</item>
+    </string-array>
+    <string-array name="initial_values">
+        <item name="selectGender">25</item>
+        <item name="male">50</item>
+
+    </string-array>
+</resources>
